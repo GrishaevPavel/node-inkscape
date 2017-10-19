@@ -15,7 +15,9 @@ the `inkscape` binary:
 
 ```javascript
 var Inkscape = require('inkscape'),
-    svgToPdfConverter = new Inkscape(['--export-pdf', '--export-width=1024']);
+    svgToPdfConverter = new Inkscape(['--export-pdf', '--export-width=1024'], {
+        cwd: 'current/working/directory'
+    });
 
 sourceStream.pipe(svgToPdfConverter).pipe(destinationStream);
 ```
