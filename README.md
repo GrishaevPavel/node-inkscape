@@ -10,6 +10,9 @@ The inkscape command line utility as a readable/writable stream. This
 is handy for situations where you don't want to worry about writing
 the input to disc and reading the output afterwards.
 
+Changes from original papandreou/node-inkscape:
+- added "current working directory" to allow resources search.
+
 The constructor optionally takes an array of command line options for
 the `inkscape` binary:
 
